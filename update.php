@@ -11,6 +11,6 @@
             $sqlstate = $conn -> prepare('UPDATE client SET cin = ? , nom = ?, prenom = ?, email = ?, password = ?, age = ? WHERE id_client = ?');
             $modify =$sqlstate -> execute([$cin,$nom,$prenom,$email,$password,$age,$id]);
 
-            header('location: ex.php');
+            header('location: index.php');
 
 ?>
