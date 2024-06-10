@@ -17,7 +17,7 @@
         foreach($data as $ele){
 
     ?>
-    <form method="post" action="mod2.php">
+    <form method="post" action="update.php">
         <lable for="cin">CIN</lable><br>
         <input type="text" id="cin" name="cin" value="<?php echo $ele[1] ;?>"><br>
 
