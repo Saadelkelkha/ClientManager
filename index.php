@@ -20,7 +20,7 @@
         $res = $conn->query($req);
         $data = $res->fetchAll(PDO::FETCH_NUM);
     ?>
-    <a href="ajouter.php" style="background-color:green;text-decoration:none;padding:2px;border-radius:3px;margin-right:3px;color:white;">ajouter</a>
+    <a href="add.php" style="background-color:green;text-decoration:none;padding:2px;border-radius:3px;margin-right:3px;color:white;">ajouter</a>
     <table>
         <tr style="border-bottom: 2px solid">
             <td>ID</td>
@@ -63,8 +63,8 @@
                     }
                 ?>
                 <td>
-                    <a href="mod.php?id=<?php echo $row[0] ?>" style="background-color:blue;text-decoration:none;padding:2px;border-radius:3px;margin-right:3px;color:white;">Modifier</a>
-                    <a href="sup.php?id=<?php echo $row[0] ?>" style="background-color:red;text-decoration:none;padding:2px;border-radius:3px;margin-right:3px;color:white;">Supprimer</a>
+                    <a href="edit.php?id=<?php echo $row[0] ?>" style="background-color:blue;text-decoration:none;padding:2px;border-radius:3px;margin-right:3px;color:white;">Modifier</a>
+                    <a href="delete.php?id=<?php echo $row[0] ?>" style="background-color:red;text-decoration:none;padding:2px;border-radius:3px;margin-right:3px;color:white;">Supprimer</a>
                 </td>
             </tr>
         <?php
