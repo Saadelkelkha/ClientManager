@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="ajouter.php">
+    <form method="post" action="add.php">
         <lable for="cin">CIN</lable><br>
         <input type="text" id="cin" name="cin"><br>
 
@@ -40,7 +40,7 @@
             $sqlstate = $conn -> prepare('insert into client values(NULL,?,?,?,?,?,?)');
             $ajoute = $sqlstate -> execute([$cin,$nom,$prenom,$email,$password,$age]);
 
-            header('location: ex.php');
+            header('location: index.php');
         }
     ?>
 </body>
